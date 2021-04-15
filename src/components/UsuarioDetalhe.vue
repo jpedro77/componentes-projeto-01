@@ -19,7 +19,7 @@ export default {
         }
     },
     created() {
-        barramento.$on('detalhar', usuario => {
+        barramento.onUsuarioSelecionado(usuario => {
             this.usuario = usuario
         })
     }

@@ -26,7 +26,7 @@ export default {
     },
     methods: {
         detalharUsuario(usuario) {
-            barramento.$emit('detalhar', usuario)
+            barramento.setUsuarioSelecionado(usuario)
         }
     }
 }
